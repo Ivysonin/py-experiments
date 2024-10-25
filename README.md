@@ -5,7 +5,3 @@
 - Lojas
 - Atendimentos
 - Atividades de Escola
-
- <div style="display: inline_block">
-  
-</div>
