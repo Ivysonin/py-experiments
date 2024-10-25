@@ -1,2 +1,11 @@
-# Fazendo alguns projetos que podem ser úteis no dia a dia ou
-# que tenha pelo menos fundamentos de empresas,lojas e etcs...
+## 🚀 Praticando Usando Fundamentos como:
+
+- Empresas
+- Jogos
+- Lojas
+- Atendimentos
+- Atividades de Escola
+
+ <div style="display: inline_block">
+  
+</div>
