@@ -2,7 +2,7 @@ import random
 
 print ("========== Luta Mewtwo ==========")
 
-#Lista pokémon
+#Lista pokémons
 print ("\n===== Pokémon =====")
 print ("1- Charizard")
 print ("2- Lapras")
