@@ -1,8 +1,4 @@
-# Adicionar os pokémons
-# Tipo do pokémon
-# Fraqueza do pokémon
-# Exibir uma lista
-
+# Dicionario vazio
 pokedex = {}
 
 print ("====== POKÉDEX ======\n") # Organização
