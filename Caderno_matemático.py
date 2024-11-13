@@ -27,12 +27,15 @@ def subtrair() :
     print ("================")
 
 def divisao() :
-    print ("=== Escolha dois números para dividir, lembre que não podemos dividir nada por 0 !\n")
-    num1 = int(input ("Dividendo: "))
-    num2 = int(input ("Divisor: ")) 
-    resultado = num1 / num2
-    print (f"{num1} ÷ {num2} = {resultado}")
-    print ("================")
+    try:
+        print ("=== Escolha dois números para dividir, lembre que não podemos dividir nada por 0 !\n")
+        num1 = int(input ("Dividendo: "))
+        num2 = int(input ("Divisor: ")) 
+        resultado = num1 / num2
+        print (f"{num1} ÷ {num2} = {resultado}")
+        print ("================")
+    except ZeroDivisionError:
+        print ("\n===== Erro: Número não divide por 0 =====")
 
 def multiplicar() :
     print ("=== Escolha dois números para multiplicar:\n")
