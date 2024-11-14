@@ -1,30 +1,39 @@
 # Funções para executar
 
 def tabuada() :
-    numero = int(input ("Escolha o número para ver sua tabuada: "))
-    contador = 1
-    resultado = numero * contador
-    for i in range(10) :
-        print (f"{numero} x {contador} = {resultado}")
-        contador += 1
+    try:
+        numero = int(input ("Escolha o número para ver sua tabuada: "))
+        contador = 1
         resultado = numero * contador
-    print ("================")
+        for i in range(10) :
+            print (f"{numero} x {contador} = {resultado}")
+            contador += 1
+            resultado = numero * contador
+        print ("================")
+    except ValueError:
+        print ("\n===== ERRO: escolha um número =====")
 
 def somando () :
-    print ("=== Escolha dois números para fazer sua soma:\n")
-    num1 = int(input ("Digite um número: "))
-    num2 = int(input ("Digite outro número: "))
-    resultado = num1 + num2
-    print (f"{num1} + {num2} = {resultado}")
-    print ("================")
+    try:
+        print ("=== Escolha dois números para fazer sua soma:\n")
+        num1 = int(input ("Digite um número: "))
+        num2 = int(input ("Digite outro número: "))
+        resultado = num1 + num2
+        print (f"{num1} + {num2} = {resultado}")
+        print ("================")
+    except ValueError:
+        print ("\n===== ERRO: escolha um número =====")
 
 def subtrair() :
-    print ("=== Escolha dois números para subtrair:\n")
-    num1 = int(input ("Digite um número: "))
-    num2 = int(input ("Digite outro número: "))
-    resultado = num1 - num2
-    print (f"{num1} - {num2} = {resultado}")
-    print ("================")
+    try:
+        print ("=== Escolha dois números para subtrair:\n")
+        num1 = int(input ("Digite um número: "))
+        num2 = int(input ("Digite outro número: "))
+        resultado = num1 - num2
+        print (f"{num1} - {num2} = {resultado}")
+        print ("================")
+    except ValueError :
+        print ("\n===== ERRO: escolha um número =====")
 
 def divisao() :
     try:
@@ -38,50 +47,67 @@ def divisao() :
         print ("\n===== Erro: Número não divide por 0 =====")
 
 def multiplicar() :
-    print ("=== Escolha dois números para multiplicar:\n")
-    num1 = int(input ("Digite um número: "))
-    num2 = int(input ("Digite outro número: "))
-    resultado = num1 * num2
-    print (f"{num1} x {num2} = {resultado}")
-    print ("================")
+    try: 
+        print ("=== Escolha dois números para multiplicar:\n")
+        num1 = int(input ("Digite um número: "))
+        num2 = int(input ("Digite outro número: "))
+        resultado = num1 * num2
+        print (f"{num1} x {num2} = {resultado}")
+        print ("================")
+    except ValueError :
+        print ("\n===== ERRO: escolha um número =====")
 
 def potencia() :
-    print ("=== Escolha dois números, Um para Você expontenciar e outro para saber se é quadrada,cubica, etcs:\n")
-    num1 = int(input ("Digite o que você deseja expontenciar: "))
-    num2 = int(input ("Digite quanto vai ser essa expontenciação (2para quadrada, 3 para cubica...): "))
-    resultado = num1**num2
-    print (f"\n{num1}^{num2} = {resultado}")
-    print ("================")    
+    try :
+        print ("=== Escolha dois números, Um para Você expontenciar e outro para saber se é quadrada,cubica, etcs:\n")
+        num1 = int(input ("Digite o que você deseja expontenciar: "))
+        num2 = int(input ("Digite quanto vai ser essa expontenciação (2para quadrada, 3 para cubica...): "))
+        resultado = num1**num2
+        print (f"\n{num1}^{num2} = {resultado}")
+        print ("================")    
+    except ValueError :
+        print ("\n===== ERRO: escolha um número =====")
 
 def imc() :
-    print ("=== Digite seu peso e a altura para saber a Índice de Massa Corporal (IMC):\n")
-    peso = float(input ("Digite seu peso: "))
-    altura = float(input ("Digite sua altura: "))
-    resultado = peso / (altura**2)
-    print (f"\nAltura {altura}, peso {peso}, IMC {resultado:.2f}")
-    print ("=====================================")
+    try :
+        print ("=== Digite seu peso e a altura para saber a Índice de Massa Corporal (IMC):\n")
+        peso = float(input ("Digite seu peso: "))
+        altura = float(input ("Digite sua altura: "))
+        resultado = peso / (altura**2)
+        print (f"\nAltura {altura}, peso {peso}, IMC {resultado:.2f}")
+        print ("=====================================")
+    except ValueError :
+        print ("\n===== ERRO: escolha um número =====")
 
 def C_para_F() :
-    print ("=== Transformando °C em °F:\n")
-    graus_celsius = int(input ("Informe a temperatura °C: "))
-    f = (graus_celsius * 9/5) + 32
-    print (f"{graus_celsius}°C convertido para Fahrenheit, {f}°F")
-    print ("==========================================")
+    try :
+        print ("=== Transformando °C em °F:\n")
+        graus_celsius = int(input ("Informe a temperatura °C: "))
+        f = (graus_celsius * 9/5) + 32
+        print (f"{graus_celsius}°C convertido para Fahrenheit, {f}°F")
+        print ("==========================================")
+    except ValueError :
+        print ("\n===== ERRO: escolha um número =====")
 
 def porcentagem() :
-    escolha = input("Primeiro escolha se é um acréscimo(1) ou desconto(2): ")
-    if escolha == "1" : # Acréscimo
-        valor = int(input ("Digite o valor: "))
-        porcentagem = int(input ("Digite a porcentagem: "))
-        resultado = valor + (valor * porcentagem/100)
-        print (f"Atribuindo {porcentagem}% a {valor} = {resultado}")
-        print ("==================================")
-    else: # Desconto
-        valor = int(input ("Digite o valor: "))
-        porcentagem = int(input ("Digite a porcentagem: "))
-        resultado = valor - (valor * porcentagem/100)
-        print (f"Diminuindo {porcentagem}% a {valor} = {resultado}")
-        print ("================================")
+    try :
+        escolha = int(input("Primeiro escolha se é um acréscimo(1) ou desconto(2): "))
+        if escolha == 1 : # Acréscimo
+            valor = int(input ("Digite o valor: "))
+            porcentagem = int(input ("Digite a porcentagem: "))
+            resultado = valor + (valor * porcentagem/100)
+            print (f"Atribuindo {porcentagem}% a {valor} = {resultado}")
+            print ("==================================")
+        elif escolha == 2 : # Desconto
+            valor = int(input ("Digite o valor: "))
+            porcentagem = int(input ("Digite a porcentagem: "))
+            resultado = valor - (valor * porcentagem/100)
+            print (f"Diminuindo {porcentagem}% a {valor} = {resultado}")
+            print ("================================")
+        else:
+            print ("\n===== Siga as instruções =====")
+    except ValueError :
+        print ("\n===== ERRO: escolha um número =====")
 
 # Organização
 print ("========== Bem-vindo ao Caderno Matemático Nunes ==========")
