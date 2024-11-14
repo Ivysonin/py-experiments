@@ -19,12 +19,12 @@ while True :
         for i in range(qnt_pokemons) :
             pokemons()
 
-# Organização
+        # Organização
         print ("\n===== Pokémons Registrado na Pokédex =====\n") # Organização
 
         for chave,valor in pokedex.items() :
             print(f"{chave} - {valor}")
         break
     
-    except ValueError :
+    except ValueError : # Se for digitado algo que não seja número ele gera esse erro :
         print ("\n===== ERRO: digite números =====\n")
