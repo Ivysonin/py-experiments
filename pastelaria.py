@@ -31,35 +31,35 @@ while True:
             print ("\n===== Sabor adicionado, mais algum? =====\n")
             pastel.append(ingrediente1)
         else:
-            print ("Esse sabor você já escolheu, escolha outro !\n")
+            print ("\nEsse sabor você já escolheu, escolha outro !\n")
             
     elif escolha == "2" :
         if ingrediente2 not in pastel: # Se não estiver, adiciono
             print ("\n===== Sabor adicionado, mais algum? =====\n")
             pastel.append(ingrediente2)
         else:
-            print ("Esse sabor você já escolheu, escolha outro !\n")
+            print ("\nEsse sabor você já escolheu, escolha outro !\n")
             
     elif escolha == "3" :
         if ingrediente3 not in pastel: # Se não estiver, adiciono
             print ("\n===== Sabor adicionado, mais algum? =====\n")
             pastel.append(ingrediente3)
         else:
-            print ("Esse sabor você já escolheu, escolha outro !\n")
+            print ("\nEsse sabor você já escolheu, escolha outro !\n")
             
     elif escolha == "4" :
         if ingrediente4 not in pastel: # Se não estiver, adiciono
             print ("\n===== Sabor adicionado, mais algum? =====\n")
             pastel.append(ingrediente4)
         else:
-            print ("Esse sabor você já escolheu, escolha outro !\n")
+            print ("\nEsse sabor você já escolheu, escolha outro !\n")
             
     elif escolha == "5" :
         if ingrediente5 not in pastel: # Se não estiver, adiciono
             print ("\n===== Sabor adicionado, mais algum? =====\n")
             pastel.append(ingrediente5)
         else:
-            print ("Esse sabor você já escolheu, escolha outro !\n")
+            print ("\nEsse sabor você já escolheu, escolha outro !\n")
             
     else:
         print ("\n===== Você está fazendo algo errado, tente de novo =====\n")
