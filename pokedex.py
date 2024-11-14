@@ -11,14 +11,20 @@ pokedex = {}
 
 print ("====== POKÉDEX ======\n") # Organização
 
-qnt_pokemons = int(input ("=== Digite a quantidade de pokémons: "))
-
-# Adicionando os pokémons
-for i in range(qnt_pokemons) :
-    pokemons()
+while True :
+    try :
+        qnt_pokemons = int(input ("=== Digite a quantidade de pokémons: "))
+    
+        # Adicionando os pokémons
+        for i in range(qnt_pokemons) :
+            pokemons()
 
 # Organização
-print ("\n===== Pokémons Registrado na Pokédex =====\n") # Organização
+        print ("\n===== Pokémons Registrado na Pokédex =====\n") # Organização
 
-for chave,valor in pokedex.items() :
-    print(f"{chave} - {valor}")
+        for chave,valor in pokedex.items() :
+            print(f"{chave} - {valor}")
+        break
+    
+    except ValueError :
+        print ("\n===== ERRO: digite números =====\n")
