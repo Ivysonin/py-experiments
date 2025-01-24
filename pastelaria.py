@@ -32,35 +32,35 @@ while True:
         print(f"{cor_vermelho}\n ===== Você terminou de escolher ! =====\n{reset_cor}")
         break
         
-    elif escolha == "1" :
+    elif escolha == "1":
         if ingrediente1 not in pastel: # Se não estiver, adiciono
             print(f"{cor_ciano}\n===== Sabor adicionado, mais algum? =====\n{reset_cor}")
             pastel.append(ingrediente1)
         else:
             print(f"{cor_vermelho}\nEsse sabor você já escolheu, escolha outro !\n{reset_cor}")
             
-    elif escolha == "2" :
+    elif escolha == "2":
         if ingrediente2 not in pastel: # Se não estiver, adiciono
             print(f"{cor_ciano}\n===== Sabor adicionado, mais algum? =====\n{reset_cor}")
             pastel.append(ingrediente2)
         else:
             print(f"{cor_vermelho}\nEsse sabor você já escolheu, escolha outro !\n{reset_cor}")
             
-    elif escolha == "3" :
+    elif escolha == "3":
         if ingrediente3 not in pastel: # Se não estiver, adiciono
             print(f"{cor_ciano}\n===== Sabor adicionado, mais algum? =====\n{reset_cor}")
             pastel.append(ingrediente3)
         else:
             print(f"{cor_vermelho}\nEsse sabor você já escolheu, escolha outro !\n{reset_cor}")
             
-    elif escolha == "4" :
+    elif escolha == "4":
         if ingrediente4 not in pastel: # Se não estiver, adiciono
             print(f"{cor_ciano}\n===== Sabor adicionado, mais algum? =====\n{reset_cor}")
             pastel.append(ingrediente4)
         else:
             print(f"{cor_vermelho}\nEsse sabor você já escolheu, escolha outro !\n{reset_cor}")
             
-    elif escolha == "5" :
+    elif escolha == "5":
         if ingrediente5 not in pastel: # Se não estiver, adiciono
             print(f"{cor_ciano}\n===== Sabor adicionado, mais algum? =====\n{reset_cor}")
             pastel.append(ingrediente5)
